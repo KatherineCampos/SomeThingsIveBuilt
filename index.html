@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> The Sushi House </title>
+	<meta charset="utf-8">
+	
+	<link href="tshouse.css" rel="stylesheet">
+	<script type="text/javascript">
+		var slideimages = new Array()
+		slideimages[0] = new Image()
+		slideimages[1] = new Image()
+		slideimages[2] = new Image()
+		slideimages[3] = new Image()
+		slideimages[4] = new Image()
+		slideimages[5] = new Image()
+		slideimages[6] = new Image()
+		slideimages[7] = new Image()
+		slideimages[8] = new Image()
+		slideimages[9] = new Image()
+				
+		slideimages[0].src = "images/pic1.JPG"  
+		slideimages[1].src = "images/pic2.JPG"	
+		slideimages[2].src = "images/pic3.JPG"
+		slideimages[3].src = "images/pic4.JPG"
+		slideimages[4].src = "images/pic5.JPG"
+		slideimages[5].src = "images/pic6.JPG"
+		slideimages[6].src = "images/pic7.JPG"
+		slideimages[7].src = "images/pic8.JPG"
+		slideimages[8].src = "images/pic9.JPG"
+		slideimages[9].src = "images/pic10.JPG"
+	</script>
+	
+</head>
+
+<body>
+<embed name="myMusic" src="music\bgmusic.mp3" loop="true" hidden="true" autostart="true">
+<div class="wrapper">
+
+	<header>
+		<img src="images\TheSushiHouseLogo.jpg" alt="The Sushi House Logo" width="200" height="120" style="padding: 10px 5px 5px 10px">
+		<h1>The Sushi House</h1>
+		
+		<div id="dateDiv" align="right">
+			<p> Today Date: 
+				<p id="myDate"> 
+				<script>
+					document.getElementById("myDate").innerHTML = new Date().toDateString(); 
+				</script>
+				</p>
+				<input type="text" placeholder="Search.." name="search">
+				<a href="https://www.google.ca/" target="-blank"><img src="images\searchButton.png" width="25px" height="18px"/></a>
+			</p>
+		</div>
+	</header>
+	
+	<nav>
+			
+			<li><a href="index.html">Home</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<div class="drpHead">
+				<li>Our Menu</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<div class="drpContent">
+						<li><a href="underConstruction.html">Breakfast</a></li>
+						<li><a href="underConstruction.html">Lunch</a></li>
+						<li><a href="underConstruction.html">Dinner</a></li>
+					</div>
+			</div>
+			<div class="drpHead">
+				<li>Survey</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<div class="drpContent">
+					<li><a href="survey.html">CS_Survey</a></li>
+				</div>				
+			</div>
+			<li><a href="directory.html">Directory</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<li><a href="contact.html">Contact</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		
+	</nav>
+
+	<main>
+		<div id="tenPhotos">
+			<img src="images\pic7.JPG" alt="tart" width="600" height="325" id="slide"</img>
+			<script type="text/javascript">
+				var SlideNum=0;
+				function slidpic()
+				{
+					if(!document.images)//not Images, all lower case
+					return
+					document.getElementById('slide').src = slideimages[SlideNum].src
+					if(SlideNum<9)
+					{
+						SlideNum++;
+					}
+					else
+					{
+						SlideNum=0;
+					}
+				setTimeout("slidpic()", 2000);
+				}
+				slidpic();
+			</script>
+			
+		</div>
+		<div id="webInfo">
+			<h3 align="center">We’re the hangout spot for families who loves to eat sushi as their <br>MAIN DISH!!!</h3>
+			<p style="font-size:15px; text-align:justify" >At The Sushi House, there’s something for everyone!!! We have large variety of sushi that everyone would love. 
+				We also have a large, friendly, and relaxed dining hall that we bet you’ll enjoy!!!  So whether you are living 
+				within the city or small town do not forget to stop by one of our branches in Edmonton, Calgary, Lethbridge, 
+				and our main branch in town of Picture Butte and try our mouth-watering sushi.     
+			</p>
+		</div>
+		</main>
+		
+		<div id="myVideo">
+			<div id="googleMap" style="width: 433;"><iframe width="433" height="250" 
+			src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=650%20Crescent%20Avenue%20Picture%20Butte%20Alberta%20Canada+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" 
+			frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">
+			Google Maps iframe generator</a></iframe>
+			</div><br/>
+			
+			<video width="400" height="250" controls="hidden">
+				<source src="music\resto.mp4" type="video/mp4">
+				Your browser does not support HTML video.
+			</video>
+			</table>
+		</div>
+
+	<aside>
+		<div id="myProduct">
+			<marquee><h3 align="center">We Offer wide variety of the following!!</h3></marquee>
+			<p>	<ul>
+					<li>Sushi Rolls & Cone Sushi </li>
+					<li>Appetizers</li>
+					<li>Signatured Soups</li>
+					<li>Noodles</li>
+					<li>Donburi</li>
+					<li>Sushi A La Carte</li>
+					<li>Sashimi</li>
+				</ul>
+				
+			</p>
+		</div>
+		
+		<div id="eventTable">
+		<table width="100%" height="100%" border="3" cellspacing="0" cellpadding="4">
+			<th colspan="4">Stay tuned with our upcoming Events</th>
+			<tr>
+				<th>Description</th>
+				<th colspan="2">Date/Time</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Salmon and Tuna Night</td>
+				<td>Every Wednesday starting from 
+					<br>Nov. 21, 2018 to Dec 19, 2018</td>
+				<td>Lunch: 11:00am-2:00pm </td>
+				<td>$18.00 per person</td>
+			</tr>
+			<tr>
+				<td>Christmas Lunch & Dinner Buffet</td>
+				<td>Dec. 25, 2018 (RSVP)</td>
+				<td>Lunch: 11:00am-2:00pm <br>
+					Dinner: 5:00pm-8:00pm</td>
+				<td>$20.00 per person</td>
+			</tr>
+			<tr>
+				<td>New Years Eve Dinner Service</td>
+				<td>Dec. 31, 2018 (RSVP)</td>
+				<td>Dinner: 8:00pm-12:00am</td>
+				<td>$20.00 per person</td>
+			</tr>
+		</table>
+		</div>
+		
+	</aside>
+	
+	<div id="iFooter">
+		<a href="https://www.facebook.com/" target="-blank"><img src="images\fbLogo.jpg" width="50" height="50" alt="facebook"></a> &nbsp 
+		<a href="https://twitter.com/?lang=en" target="-blank"><img src="images\Twitter.png" width="50" height="50" alt="facebook"></a> &nbsp &nbsp &nbsp
+		<p>Address: 650 Crescent Ave, Picture Butte, AB T0K 1V0, Canada</p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<div id="divCopyright" align="right">
+			Copyright &copy 2018 | Privacy Policy | Legal Issues
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

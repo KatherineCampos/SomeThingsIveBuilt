@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> The Sushi House::Directory </title>
+	<meta charset="utf-8">
+	
+	<link href="tshouse.css" rel="stylesheet">
+</head>
+<body>
+<embed name="myMusic" src="music\bgmusic.mp3" loop="true" hidden="true" autostart="true">
+<div class="wrapper">
+
+	<header>
+		<img src="images\TheSushiHouseLogo.jpg" alt="The Sushi House Logo" width="200" height="120" style="padding: 10px 5px 5px 10px">
+		<h1>The Sushi House</h1>
+		
+		<div id="dateDiv" align="right">
+			<p> Today Date: 
+				<p id="myDate"> 
+				<script>
+					document.getElementById("myDate").innerHTML = new Date().toDateString(); 
+				</script>
+				</p>
+				<input type="text" placeholder="Search.." name="search">
+				<a href="https://www.google.ca/" target="-blank"><img src="images\searchButton.png" width="25px" height="18px"/></a>
+			</p>
+		</div>
+	</header>
+	
+	<nav>
+			
+			<li><a href="index.html">Home</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<div class="drpHead">
+				<li>Our Menu</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<div class="drpContent">
+						<li><a href="underConstruction.html">Breakfast</a></li>
+						<li><a href="underConstruction.html">Lunch</a></li>
+						<li><a href="underConstruction.html">Dinner</a></li>
+					</div>
+			</div>
+			<div class="drpHead">
+				<li>Survey</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<div class="drpContent">
+					<li><a href="survey.html">CS_Survey</a></li>
+				</div>				
+			</div>
+			<li><a href="directory.html">Directory</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<li><a href="contact.html">Contact</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		
+	</nav>
+	
+	<div id="divDirectory">
+		<div id="dirPic">
+			<img src="images\myPic.jpg" alt="the author" width="180" height="250"/>
+		</div>
+		
+		<div id="dirInfo">
+			<h2>Student Biography</h2>
+			<h3>Katherine Campos</h3>
+			<p>
+				Program: Computer Information Technology (CIT) <br>
+				Biography: 
+			</p>
+			<p align="justify">
+			Katherine Campos is a first-year student of Computer Information Technology at Lethbridge College.  
+			She is a Filipino Citizen currently on Permanent Residence Visa since May 2015.  Before coming to Canada, 
+			she worked in Dubai for eight years and she worked there for various companies, where she obtained a lot of 
+			skills and experiences.  Her husband moved in Canada in 2013 and because Canada has a good immigration system for 
+			families, she and her daughter moved in Canada in 2014.  Starting a new life in a new place was not easy.  
+			One of her colleague on one of her part-time jobs motivated her to go back to school.  Thus, given another 
+			opportunity to go back to school is a life-changing experience for her, and she is very excited and hoping that 
+			she can get through all of the challenges with confidence.
+			</p>
+			<p align="right" style="font-style:italic; font-size:10px">This website was inspired by Katherine's husband, a cook. Images shown on this website are true work of her husband.</p>
+		</div>
+	</div>
+	
+	<div id="iFooter">
+		<a href="https://www.facebook.com/"><img src="images\fbLogo.jpg" width="50" height="50" alt="facebook"></a> &nbsp 
+		<a href="https://twitter.com/?lang=en"><img src="images\Twitter.png" width="50" height="50" alt="facebook"></a> &nbsp &nbsp &nbsp
+		<p>Address: 650 Crescent Ave, Picture Butte, AB T0K 1V0, Canada</p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<div id="divCopyright">
+			Copyright &copy 2018 | Privacy Policy | Legal Issues
+		</div>
+	</div>
+</div>
+</body>
+</html>

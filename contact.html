@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> The Sushi House::Contact </title>
+	<meta charset="utf-8">
+	
+	<link href="tshouse.css" rel="stylesheet">
+</head>
+<body>
+<embed name="myMusic" src="music\bgmusic.mp3" loop="true" hidden="true" autostart="true">
+<div class="wrapper">
+
+	<header>
+		<img src="images\TheSushiHouseLogo.jpg" alt="The Sushi House Logo" width="200" height="120" style="padding: 10px 5px 5px 10px">
+		<h1>The Sushi House</h1>
+		
+		<div id="dateDiv" align="right">
+			<p> Today Date: 
+				<p id="myDate"> 
+				<script>
+					document.getElementById("myDate").innerHTML = new Date().toDateString(); 
+				</script>
+				</p>
+				<input type="text" placeholder="Search.." name="search">
+				<a href="https://www.google.ca/" target="-blank"><img src="images\searchButton.png" width="25px" height="18px"/></a>
+			</p>
+		</div>
+	</header>
+	
+	<nav>
+			
+			<li><a href="index.html">Home</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<div class="drpHead">
+				<li>Our Menu</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<div class="drpContent">
+						<li><a href="underConstruction.html">Breakfast</a></li>
+						<li><a href="underConstruction.html">Lunch</a></li>
+						<li><a href="underConstruction.html">Dinner</a></li>
+					</div>
+			</div>
+			<div class="drpHead">
+				<li>Survey</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<div class="drpContent">
+					<li><a href="survey.html">CS_Survey</a></li>
+				</div>				
+			</div>
+			<li><a href="directory.html">Directory</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<li><a href="contact.html">Contact</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		
+	</nav>
+
+
+	<div id="divContact">
+		<p>
+		<h2>Contact Information: </h2> 
+		Contact person: Katherine Campos <br>
+		Address: 650 Crescent Avenue, Picture Butte, AB T0K 1V0, Canada <br>
+		Phone number: 403-333-4444 <br>
+		Email address: katherine.campos@thesushihouse.com
+		</p>
+	</div>
+
+	<div id="iFooter">
+		<a href="https://www.facebook.com/" target="-blank"><img src="images\fbLogo.jpg" width="50" height="50" alt="facebook"></a> &nbsp 
+		<a href="https://twitter.com/?lang=en" target="-blank"><img src="images\Twitter.png" width="50" height="50" alt="facebook"></a> &nbsp &nbsp &nbsp
+		<p>Address: 650 Crescent Ave, Picture Butte, AB T0K 1V0, Canada</p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<div id="divCopyright" align="right">
+			Copyright &copy 2018 | Privacy Policy | Legal Issues
+		</div>
+	</div>
+</div>
+</body>
+</html>

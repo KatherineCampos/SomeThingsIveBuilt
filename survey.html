@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> The Sushi House::Customer Satisfaction Survey </title>
+	<meta charset="utf-8">
+	
+	<link href="tshouse.css" rel="stylesheet">
+
+</head>
+<body>
+<embed name="myMusic" src="music\bgmusic.mp3" loop="true" hidden="true" autostart="true">
+<div class="wrapper">
+
+	<header>
+		<img src="images\TheSushiHouseLogo.jpg" alt="The Sushi House Logo" width="200" height="120" style="padding: 10px 5px 5px 10px">
+		<h1>The Sushi House</h1>
+		
+		<div id="dateDiv" align="right">
+			<p> Today Date: 
+				<p id="myDate"> 
+				<script>
+					document.getElementById("myDate").innerHTML = new Date().toDateString(); 
+				</script>
+				</p>
+				<input type="text" placeholder="Search.." name="search">
+				<a href="https://www.google.ca/" target="-blank"><img src="images\searchButton.png" width="25px" height="18px"/></a>
+			</p>
+		</div>
+	</header>
+	
+	<nav>
+			
+			<li><a href="index.html">Home</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<div class="drpHead">
+				<li>Our Menu</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<div class="drpContent">
+						<li><a href="underConstruction.html">Breakfast</a></li>
+						<li><a href="underConstruction.html">Lunch</a></li>
+						<li><a href="underConstruction.html">Dinner</a></li>
+					</div>
+			</div>
+			<div class="drpHead">
+				<li>Survey</li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				<div class="drpContent">
+					<li><a href="survey.html">CS_Survey</a></li>
+				</div>				
+			</div>
+			<li><a href="directory.html">Directory</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<li><a href="contact.html">Contact</a></li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	</nav>
+
+
+<main>
+<div>
+		<form method="post" Action="mailto:katherine.campos@lethbridgecollege.ca" target="_blank" width="100%">
+		<table class="flexing" cellpadding="10" cellspacing="2" border="3" align="center">
+			<tr>
+				<th colspan="2">Customer Satisfaction Survey</th>
+			</tr>
+			
+			<tr>
+				<td colspan="2"> 1. With regards to your most recent experience dealing with our company. What was the quality of the customer service you received? <br>
+					 <input type="radio" name="ExpQuality" value="excellent">Excellent </input> <br>
+					 <input type="radio" name="ExpQuality" value="vGood">Very Good </input> <br>
+					 <input type="radio" name="ExpQuality" value="good">Good </input> <br>
+					 <input type="radio" name="ExpQuality" value="poor">Poor </input> <br>
+					 <input type="radio" name="ExpQuality" value="vPoor">Very Poor </input> <br>
+				
+				</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2"> 2. Taking into consideration the features and benefits of the product itself. How satisfied are you with the product? <br>
+					 <input type="radio" name="LevelSatisfy" value="vDissatisfy">Very Dissatisfied </input> <br>
+					 <input type="radio" name="LevelSatisfy" value="dSatisfy">Dissatisfied </input> <br>
+					 <input type="radio" name="LevelSatisfy" value="sNeutral">Neutral </input> <br>
+					 <input type="radio" name="LevelSatisfy" value="satisfy">Satisfied </input> <br>
+					 <input type="radio" name="LevelSatisfy" value="vSatisfy">Very Satisfactory </input> <br>
+				
+				</td>
+			</tr>
+		
+			<tr> 
+				<td colspan="2"> 3. What are your favorite things about this product? <br>
+					 <input type="checkbox" name="favProd" value="design">Design </input> <br>
+					 <input type="checkbox" name="favProd" value="cost">Cost </input> <br>
+					 <input type="checkbox" name="favProd" value="feature">Features </input> <br>
+					 <input type="checkbox" name="favProd" value="eouse">Ease of Use </input> <br>
+					 <input type="checkbox" name="favProd" value="delivery">Delivery </input> <br>
+				</td>
+			
+			</tr>
+		
+			<tr>
+				<td colspan="2"> 4. The following statements refer to your recent conversation with the sales representative, please indicate whether you agree or disagree.
+					<br>
+					<table class="flexing" border="0" cellpadding="2" cellspacing="1" align="left">
+						<tr>
+							<th>****************************** </th>
+							<th>Strong Agree</th> 
+							<th>Agree</th> 
+							<th>Neutral</th>
+							<th>Disagree</th>
+							<th>Very Disagree</th>
+						</tr>
+						
+						<tr>
+							<td colspan="6" >The sales person was <br> very courteous 		
+								&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+								&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+								<input type="radio" name="Courteous" value="sAgree"></input> 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
+								<input type="radio" name="Courteous" value="agree"></input> 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+								<input type="radio" name="Courteous" value="repNeutral"></input> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+								<input type="radio" name="Courteous" value="disagree"></input>	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+								<input type="radio" name="Courteous" value="vDisagree"></input>	
+							</td>
+							
+						</tr>
+						
+						<tr>
+							<td colspan="6">The sales person dealt with <br> my enquiry professionally
+								&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   
+								&nbsp &nbsp &nbsp &nbsp &nbsp    
+								<input type="radio" name="Enquiry" value="esAgree"></input> 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
+								<input type="radio" name="Enquiry"  value="eagree"></input> 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+								<input type="radio" name="Enquiry"  value="erepNeutral"></input> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+								<input type="radio" name="Enquiry"  value="edisagree"></input>	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+								<input type="radio" name="Enquiry"  value="evDisagree"></input>	
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<tr>
+				<td> Please provide us with your comments</td>
+				<td>
+					<textarea type="textinput" name="comments" id="comments" rows="5" Cols="80" style="background-color:white; overflow:auto;"></textarea> 
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Please submit this form</td>
+				<td>Your Name Please <input type="text" name="fullName" maxlength="30"></input> <input type="submit" value="Submit"></input> <br>
+					To clear this form, please click here <input type="reset" id="reset" name="clear"></input>
+				</td>
+			</tr>
+		
+		</table>
+	</form>
+</div>
+</main>
+
+	<div id="iFooter">
+		<a href="https://www.facebook.com/" target="-blank"><img src="images\fbLogo.jpg" width="50" height="50" alt="facebook"></a> &nbsp 
+		<a href="https://twitter.com/?lang=en" target="-blank"><img src="images\Twitter.png" width="50" height="50" alt="facebook"></a> &nbsp &nbsp &nbsp
+		<p>Address: 650 Crescent Ave, Picture Butte, AB T0K 1V0, Canada</p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<div id="divCopyright" align="right">
+			Copyright &copy 2018 | Privacy Policy | Legal Issues
+		</div>
+	</div>
+</div>
+
+	
+
+</body>
+</html>
